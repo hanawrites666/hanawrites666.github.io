@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☆~digital junk drawer ᯓ★ </title>
+    <style>
+        body {
+            background-color: #000000;
+            /*background-image: url('55103.gif');*/
+            /*background-repeat: no-repeat;*/
+            /*background-size: cover; -->*/
+            color: #00ff00; /*lime green letters*/
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container {
+            margin-top: 100px;
+            width: 100%;
+            max-width: 1000px; 
+            margin: 0 auto;
+            background-color: #000000; 
+            
+            padding: 15px;
+            box-sizing: border-box; 
+            transform: translateY(100px);
+            min-height: 600px;
+           
+        }
+
+        /* 3. Header Customization */
+        header {
+            text-align: center;
+            border-bottom: 2px dashed #00ffff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+      
+
+        /* 4. Two-Column Flex Layout */
+        #main-layout {
+            display: flex;
+            flex-direction: row; 
+            gap: 15px;
+        }
+
+        /* Sidebar Styling */
+        sidebar {
+            width: 200px;
+            flex-shrink: 0; /* Prevents desktop sidebar from squishing */
+            border-right: 2px dashed #00ffff;
+            padding-right: 15px;
+        }
+
+        /* Main Content Box */
+        main {
+            flex: 1;
+            min-width: 0; /* Prevents code blocks or text overflow from stretching flex containers */
+        }
+        
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Removes unwanted whitespace underneath the image */
+        }
+
+        
+        .blog-post {
+            border: 1px solid #ff00ff;
+            background-color: #000000;
+            padding: 10px;
+            margin-bottom: 15px;
+            word-wrap: break-word; /* Forces long unbroken words to wrap on mobile */
+        }
+
+        .post-date {
+            font-size: 11px;
+            color: #ff00ff;
+            font-weight: bold;
+        }
+
+        .post-title {
+            color: #00ffff;
+            margin: 5px 0;
+        }
+
+        /* 6. Links, Blink Effects, and Custom Navigation */
+        a {
+            color: #ffff00; 
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ff00ff;
+            background-color: #ffff00;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        .widget-box {
+            border: 1px dotted #ffff00;
+            padding: 8px;
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        /* ==========================================================================
+           7. MEDIA QUERY: Changes the layout architecture specifically for phones
+           ========================================================================== */
+        @media (max-width: 600px) {
+            #main-layout {
+                flex-direction: column; /* Stacks the sidebar ABOVE the posts on mobile */
+            }
+
+            sidebar {
+                width: 100%; /* Expands sidebar to take full width of mobile display */
+                border-right: none; /* Removes desktop horizontal barrier line */
+                border-bottom: 2px dashed #00ffff; /* Adds structural baseline divider line */
+                padding-right: 0;
+                padding-bottom: 15px;
+                box-sizing: border-box;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        
+        <header>
+            <a href="https://hanawrites666.neocities.org/"><img src="x2UF7OVrQc.gif" alt="Responsive Image" ></a>
+            <marquee scrollamount="5" behavior="scroll" direction="left">
+                ✩ UPDATE: Site is still under construction ✩ hanawrites666.wordpress.com for old site ✩
+            </marquee>
+        </header>
+
+        <div id="main-layout">
+            
+            <sidebar>
+                <div class="widget-box">
+                    <strong>✩ Writings ★彡</strong><br>
+                    ★ <a href="ThoughtsandTribulations.html">Thoughts and Tribulations</a><br>
+                    ★ <a href="#">Renting in Singapore</a><br>
+                    ★ <a href="#">Short Stories</a><br>
+                    ★ <a href="#">And may the Earth swallow you</a><br>
+                    
+                    
+                </div>
+                
+           
+
+
+               
+                
+             
+            </sidebar>
+
+            <main>
+                <img src="lalala.jpg" alt= "fuck you" class="responsive-img" >
+                <div class="blog-post">
+                    <div class="post-date">June 26, 2026 @ 11:01 PM</div>
+                    
+                    <h3 class="post-title"> </h3>
+                    <p>Welcome to my blog. 
+                    
+                    
+                </div>
+
+                
+
+            </main>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
